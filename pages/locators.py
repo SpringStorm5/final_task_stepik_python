@@ -18,6 +18,12 @@ class ProductPageLocators(object):
 class BasePageLocators(object):
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    VIEW_CART_BUTTON = (By.CSS_SELECTOR, "div.basket-mini a")
+    USER_ICON = (By.CLASS_NAME, "icon-user")
+
+class CartPageLocators(object):
+    EMPTY_CART_MESSAGE = (By.CSS_SELECTOR, "div.content div#content_inner p")
+    ITEM_IN_CART = (By.CSS_SELECTOR, "div.basket-items .row")
         
 
 

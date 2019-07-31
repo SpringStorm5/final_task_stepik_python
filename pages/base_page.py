@@ -7,7 +7,7 @@ from .locators import BasePageLocators
 import math
 
 class BasePage(object):
-    def __init__(self, browser, url, timeout=5):
+    def __init__(self, browser, url, timeout=10):
         self.browser = browser
         self.url = url
         self.browser.implicitly_wait(timeout)
@@ -50,6 +50,10 @@ class BasePage(object):
 
     def go_to_login_page(self):
         link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
+        link.click()
+
+    def go_to_cart_page(self):
+        link = self.browser.find_element(*BasePageLocators.VIEW_CART_BUTTON)
         link.click()
 
     def should_be_login_link(self):
