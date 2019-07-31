@@ -1,6 +1,6 @@
 from selenium.common.exceptions import *
 from .pages.main_page import MainPage
-from .pages .login_page import LoginPage
+from .pages.login_page import LoginPage
 
 from selenium import webdriver
 import time

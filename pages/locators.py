@@ -7,6 +7,14 @@ class LoginPageLocators(object):
     REGISTRATION_FORM = (By.ID, "register_form")
     CURRENT_URL = "http://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
 
+class LoginPageLocators(object):
+    REGISTRATION_FORM = (By.ID, "register_form")
+    LOGIN_FORM = (By.ID, "login_form")
+    USER_REGISTRATION_EMAIL = (By.ID, "id_registration-email")
+    USER_REGISTRATION_PASSWORD_1 = (By.ID, "id_registration-password1")
+    USER_REGISTRATION_PASSWORD_2 = (By.ID, "id_registration-password2")
+    USER_REGISTRATION_BUTTON = (By.NAME, "registration_submit")
+
 class ProductPageLocators(object):
     ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, "button.btn-add-to-basket")
     NAME_BOOK = (By.CSS_SELECTOR, "div.product_main h1")
