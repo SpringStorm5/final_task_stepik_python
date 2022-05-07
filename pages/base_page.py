@@ -3,6 +3,7 @@ from selenium.common.exceptions import NoAlertPresentException
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 from .locators import BasePageLocators
 import math
 

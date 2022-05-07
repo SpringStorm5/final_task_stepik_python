@@ -1,3 +1,4 @@
+from imp import SEARCH_ERROR
 from selenium.webdriver.common.by import By
 class MainPageLocators(object):
     LOGIN_LINK = (By.CSS_SELECTOR, "#registration_link")
@@ -32,6 +33,13 @@ class BasePageLocators(object):
 class CartPageLocators(object):
     EMPTY_CART_MESSAGE = (By.CSS_SELECTOR, "div.content div#content_inner p")
     ITEM_IN_CART = (By.CSS_SELECTOR, "div.basket-items .row")
+
+class VendPageLocators(object):
+    SEARCH_BUTTONMAIN = (By.XPATH, "/html/body/div[1]/div[1]/div[2]/div/div[7]/div[1]")
+    SEARCH_INPUT = (By.NAME, "q")
+    CATALOG_BUTTON = (By.ID, "catalogue-button-desktop")
+    SEARCH_BUTTON = (By.CLASS_NAME, "pure-button search-submit")
+
         
 
 
